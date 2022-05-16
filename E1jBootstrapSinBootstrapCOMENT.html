@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*header, main, footer {
+            display: grid;
+          */
+        div{
+            /*display: flex;
+            align-content: space-between;*/
+        }
+
+
+        header {
+            background-color: greenyellow; 
+            width: 99vw;
+            height: 10vh;
+            border-style: solid;
+            border-width: 1px;
+            border-color: green;
+            margin-bottom: 1%;
+            box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);/*para darle somba al borde 
+            el primer valor es x el segundo es y, el tercero para el border-radius y 
+            el último es el color*/
+
+        }
+
+        h1{
+
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-style: italic;
+            margin: 2%;
+        }
+
+        main {
+            /*text-align: center;*/
+            display: flex;
+            /*align-items: center;*/
+            flex-flow: nowrap;
+            margin-bottom: 1%;
+            /*justify-content: space-around;*/
+            /*align-content: space-between;*/
+            justify-content: space-between;
+        }
+
+        .rojo{
+            background-color: red;
+            width: 30vw;
+            height: 100vh;
+            border-style: solid;
+            border-width: 1px;
+            border-color: purple;
+            /*margin-left: 10px;
+            margin-right: 10px;*/
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 30vmax;
+            /*margin: 0px 1px 0px 0px;*/
+            /*display: grid;*/
+            /*flex-direction: row;*/
+            /*justify-content: space-around;*/
+            /*display: grid;
+            grid-template-columns: auto auto auto;
+            /*grid-template-rows: 50px 50px;*/
+        
+            /*grid-gap: 20px;*/
+
+         
+        /*justify-content: center;
+        align-items: center;*/
+            
+        }
+
+        footer{
+            
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 1px;
+            width: 99vw;
+            height: 10vh;
+            display: flex;
+            flex-flow: nowrap;
+            margin-bottom: 1%;
+
+        }
+        .footer1, .footer2{
+
+            background-color: yellow;
+            width: 49vw;
+            height: 10vh;
+            border-style: solid;
+            border-width: 1px;
+            border-color: orange;
+
+            /*display: grid;
+            grid-template-columns: repeat(2, 1fr);*/
+            /*grid-auto-rows: minmax(100px, auto);*/
+            /*grid-gap: 20px;*/
+            /*display: flex;*/
+            /*flex-direction: row;
+            justify-content: space-around;*/ 
+            /*justify-content: center;
+            display: flex;*/
+            /*align-items: center;*/
+            /*flex-flow: row wrap;*/
+        }
+        .footer1{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-style: italic;
+            text-align: right;
+            /*margin-right: 10px;REVISAR BIEN*/
+            justify-content: center;
+            
+        }
+
+        .footer2{
+
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-style: italic;
+            text-align: left;
+        
+        }
+
+        .letra1{
+
+           margin-right: 10px;
+
+        }
+        .letra2{
+
+            margin-left: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1>Header</h1>
+    </header>
+    <main>
+
+        <div class= "rojo">1</div>
+        <div class= "rojo">2</div>
+        <div class="rojo" >3</div>
+
+
+    </main>
+    <footer>
+    <div class="footer1"><h2 class="letra1">Footer1</h2></div>
+    <div class="footer2"><h2 class="letra2">Footer2</h2></div>
+    </footer>
+
+</body>
+
+</html>

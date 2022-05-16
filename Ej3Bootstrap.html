@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        margin-top: 1%;
+        
+      }
+     
+      table,th,td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      td,th{
+          padding: 8px, 10px;
+          border: 0.1px solid rgb(61, 14, 169);
+      }
+
+      main{
+          padding: 1em 2em;
+      }
+
+      body{
+          margin: 0;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      th,td {
+        padding: 10px;
+      }
+
+      th {
+        text-align: left;
+      }
+
+      tr:nth-child(even) {
+        background: rgb(228, 192, 223);
+      }
+
+      tr:nth-child(odd) {
+        background: rgb(190, 226, 217);
+      }
+
+      tr:hover {
+        background: rgb(236, 227, 165);
+      }
+
+      /*.formato{
+        min-height: .01%;
+    overflow-x: auto;
+      }*/
+
+
+      @media (max-width: /*35em*/ 700px) {
+
+        body{
+            background: pink;
+        }
+        table {
+            width: 100%
+        }
+
+        table tr{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid grey;
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+
+        table td[data-titulo]{
+          display: flex;
+        }
+
+        table td[data-titulo]::before{
+          content:attr(data-titulo);
+          width: 90px;
+          font-weight: bold;
+
+        }
+        table thead{
+            display: none;
+        }
+
+        /*.formato {
+          display: block;
+          overflow-x: auto;
+          width: 100%;
+          width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+        }
+
+        .formato > .table{
+            margin-bottom: 0;
+        }
+
+        .formato > .table > thead > tr > th,
+        .formato > .table > tbody > tr > th,
+        .formato > .table > tfoot > tr > th,
+        .formato > .table > thead > tr > td,
+        .formato > .table > tbody > tr > td,
+        .formato > .table > tfoot > tr > td{
+
+            white-space: nowrap;
+
+        }*/
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <h1> TABLA RESPONSIVE</h1>
+    </header>
+    <main>
+        <h2>Listados</h2>
+        <caption>
+            DATOS PERSONALES
+          </caption>
+          <table>
+              <thead>
+            <tr>
+              <th>Nombre </th>
+              <th>Apellidos </th>
+              <th>Fecha de Nacimiento </th>
+              <th>Email </th>
+              <th>Teléfono </th>
+              <th>Calle y Número </th>
+              <th>Ciudad </th>
+              <th>País </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-titulo="Nombre: " >Marta</td>
+                <td data-titulo="Apellidos: ">Gomez López</td>
+                <td data-titulo="Fecha de Nacimiento: " >25/08/1985</td>
+                <td data-titulo="Email: ">martagomezlopez@gamil.com</td>
+                <td data-titulo="Teléfono: ">666333666</td>
+                <td data-titulo="Calle, Nº: " >Calle Alegría nº 12</td>
+                <td data-titulo="Ciudad: ">Sevilla</td>
+                <td data-titulo="País: ">España</td>
+            </tr>
+        
+            <tr>
+                <td data-titulo="Nombre: ">Pablo</td>
+                <td data-titulo="Apellidos: ">Gomez Martin</td>
+                <td data-titulo="Fecha de Nacimiento: ">5/03/1980</td>
+                <td data-titulo="Email: ">pablogomezmartin@gamil.com</td>
+                <td data-titulo="Teléfono: ">666852666</td>
+                <td data-titulo="Calle, Nº: ">Calle Sol nº 6</td>
+                <td data-titulo="Ciudad: ">Málaga</td>
+                <td data-titulo="País: ">España</td>
+            </tr>
+        
+            <tr>
+                <td data-titulo="Nombre: ">Eva</td>
+                <td data-titulo="Apellidos: ">Garcia Pérez</td>
+                <td data-titulo="Fecha de Nacimiento: ">12/03/1990</td>
+                <td data-titulo="Email: ">evagarciaperez@gamil.com</td>
+                <td data-titulo="Teléfono: ">666159666</td>
+                <td data-titulo="Calle, Nº: ">Calle Luz nº 2</td>
+                <td data-titulo="Ciudad: ">Cádiz</td>
+                <td data-titulo="País: ">España</td>
+            </tr>
+
+            <tr>
+                <td data-titulo="Nombre: ">Jose</td>
+                <td data-titulo="Apellidos: ">Martínez Ruíz</td>
+                <td data-titulo="Fecha de Nacimiento: ">21/01/1987</td>
+                <td data-titulo="Email: ">josemartinezruiz@gamil.com</td>
+                <td data-titulo="Teléfono: ">666444666</td>
+                <td data-titulo="Calle, Nº: ">Calle Rio nº 9</td>
+                <td data-titulo="Ciudad: ">Huelva</td>
+                <td data-titulo="País: ">España</td>
+            </tr>
+        </tbody>
+          </table>
+    </main>
+  </body>
+</html>
